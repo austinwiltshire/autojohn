@@ -23,5 +23,9 @@ def create_obsidian_index(location: str, index_name: str) -> None:
 
 
 if __name__ == "__main__":
+    import sys
+
+    PATH = "/home/john/Base/" if not sys.argv[1] else sys.argv[1]
+
     print("This will take some time")
-    create_obsidian_index("/home/john/Base", "obsidian_index.json")
+    create_obsidian_index(PATH, "obsidian_index.json")
