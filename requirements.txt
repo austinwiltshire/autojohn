@@ -1,0 +1,5 @@
+black[d]
+pylint
+pytest
+openai
+llama-index
